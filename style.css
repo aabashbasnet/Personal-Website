@@ -485,10 +485,92 @@ ul{ list-style:none; margin:0; padding:0; }
    FOOTER
 =================================================== */
 .footer{
-  text-align:center;
-  padding: 30px 6% 50px;
-  color: var(--ink-soft);
-  font-size: 0.85rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 64px 6% 0;
+}
+
+.footer-top{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(247,245,239,0.15);
+}
+
+.footer .nav-brand{ color: var(--paper); }
+.footer .nav-brand span{ color: var(--mustard); }
+
+.footer-brand p{
+  margin-top: 16px;
+  color: rgba(247,245,239,0.65);
+  font-size: 0.9rem;
+  max-width: 32ch;
+}
+.footer-brand .stamp{
+  margin-top: 18px;
+  color: var(--mustard);
+  border-color: var(--mustard);
+}
+
+.footer-heading{
+  color: var(--mustard);
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.footer-links{
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.footer-links a,
+.footer-links li{
+  color: rgba(247,245,239,0.75);
+  font-size: 0.92rem;
+}
+.footer-links a{ transition: color .2s ease; }
+.footer-links a:hover{ color: var(--paper); }
+
+.footer-bottom{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 24px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: rgba(247,245,239,0.55);
+  font-size: 0.82rem;
+}
+
+.footer-top-link{
+  color: rgba(247,245,239,0.75);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  border-bottom: 1px solid rgba(247,245,239,0.3);
+  transition: color .2s ease, border-color .2s ease;
+}
+.footer-top-link:hover{
+  color: var(--mustard);
+  border-color: var(--mustard);
+}
+
+@media (max-width: 900px){
+  .footer-top{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 36px;
+  }
+  .footer-brand{ grid-column: 1 / -1; }
+}
+
+@media (max-width: 480px){
+  .footer-top{ grid-template-columns: 1fr; }
+  .footer-bottom{ flex-direction: column; align-items: flex-start; }
 }
 
 /* ===================================================
