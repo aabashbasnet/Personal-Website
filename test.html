@@ -1,33 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aabash Basent — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <nav>
-            <div>
-                <a class="deco" href="#">Aabash</a>
-            </div>
-            <div>
-                <a class="deco" href="#">About</a>
-                <a class="deco" href="#">Skills</a>
-                <a class="deco" href="#">Contact</a>
-            </div>
-        </nav>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-brand">AB<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about"><span class="tag">INTRO·101</span>About</a>
+    <a href="#skills"><span class="tag">SKILL·201</span>Skills</a>
+    <a href="#projects"><span class="tag">LAB·301</span>Projects</a>
+    <a href="#contact" class="nav-cta"><span class="tag">OFFICE·HRS</span>Hire Me</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO / ID CARD ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Student Record · No. 002026</p>
+      <h1>Aabash<br>Basent</h1>
+      <p class="hero-sub">Bachelor's student, 2nd year — building things, breaking things, learning in between.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Hire me</a>
+      </div>
     </div>
-    <div class="h1">
-        <h1>Personal Portfolio</h1>
+
+    <div class="id-card" aria-hidden="false">
+      <div class="id-card-top">
+        <span class="id-card-label">STUDENT ID</span>
+        <span class="stamp">ENROLLED</span>
+      </div>
+      <div class="id-photo">AB</div>
+      <div class="id-row"><span>Name</span><strong>Aabash Basent</strong></div>
+      <div class="id-row"><span>Age</span><strong>20</strong></div>
+      <div class="id-row"><span>Level</span><strong>Bachelor · Year 2</strong></div>
+      <div class="id-row"><span>Status</span><strong>Open to work</strong></div>
+      <div class="barcode" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
     </div>
-    <p>This is just a dummy website created to design something for the practice of git.</p>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Completed Highschool.</li>
-        <li>Completed School</li>
-        <li>Completed Bachelors first year in Computing</li>
-    </ul>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="tag tag-lg">INTRO·101</span>
+      <h2>About</h2>
+    </div>
+    <div class="section-body about-grid">
+      <p class="lead">
+        I'm Aabash — a 20-year-old, currently in my 2nd year of a Bachelor's degree.
+        I'm curious about how things are built, and I like turning ideas into small
+        working pieces of software. Still early in the journey, still figuring a lot
+        out, and genuinely enjoying the process.
+      </p>
+      <ul class="fact-list">
+        <li><span>Education</span>Bachelor's Degree — 2nd Year</li>
+        <li><span>Age</span>20</li>
+        <li><span>Focus</span>Web development &amp; problem solving</li>
+        <li><span>Currently</span>Learning, building, and open to opportunities</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section alt" id="skills">
+    <div class="section-head">
+      <span class="tag tag-lg">SKILL·201</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="section-body">
+      <p class="section-note">
+        <!-- Edit the list below anytime — add, remove, or reorder your skills. -->
+        Here's what I'm comfortable with so far. Levels are honest, not exaggerated.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-top"><span>HTML</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><span>CSS</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div style="width:75%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><span>JavaScript</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div style="width:60%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><span>Python</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div style="width:65%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><span>Git &amp; GitHub</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div style="width:55%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><span>Problem Solving</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div style="width:80%"></div></div>
+        </div>
+      </div>
+
+      <div class="tools-row">
+        <span class="tool-chip">VS Code</span>
+        <span class="tool-chip">Figma</span>
+        <span class="tool-chip">MySQL</span>
+        <span class="tool-chip">C</span>
+        <span class="tool-chip">Linux Basics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="tag tag-lg">LAB·301</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="section-body">
+      <p class="section-note">
+        <!-- Replace these 3 placeholder projects with your real ones. -->
+        A few things I've built while learning. More on the way.
+      </p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-index">LAB · 01</div>
+          <h3>Project One</h3>
+          <p>Short description of what this project does and the problem it solves.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source code →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-index">LAB · 02</div>
+          <h3>Project Two</h3>
+          <p>Short description of what this project does and the problem it solves.</p>
+          <div class="project-tags"><span>Python</span><span>Automation</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source code →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-index">LAB · 03</div>
+          <h3>Project Three</h3>
+          <p>Short description of what this project does and the problem it solves.</p>
+          <div class="project-tags"><span>MySQL</span><span>Backend</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source code →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / HIRE ===== -->
+  <section class="section alt" id="contact">
+    <div class="section-head">
+      <span class="tag tag-lg">OFFICE·HRS</span>
+      <h2>Contact &amp; Hire Me</h2>
+    </div>
+    <div class="section-body contact-grid">
+      <div class="contact-info">
+        <p class="lead">
+          Looking for an intern, a freelancer for a small project, or just want to
+          say hi? My inbox is open.
+        </p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+          <li><span>Phone</span><a href="tel:+9770000000000">+977 000 000 0000</a></li>
+          <li><span>Location</span>Kathmandu, Nepal</li>
+        </ul>
+        <div class="social-row">
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="What are you looking to build?" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aabash Basent. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
